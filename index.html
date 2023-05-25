@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEHE</title>
+</head>
+<body>
+    <h1>Phần mềm đoán tuổi thông minh</h1>
+    <h2>Nhập tuổi của bạn:</h2>
+    <input type="text" id="age">
+    <br>
+    <h2 class="result"></h2>
+    <button id="btn">Đoán</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btn = document.getElementById("btn");
+            btn.onclick = function() {
+                var result = document.getElementById("age").value;
+                var dis = document.getElementsByClassName("result")[0];
+                dis.innerHTML = "Tuổi của bạn là: " + result;
+                dis.style.display = "block";
+            };
+        });
+    </script>
+</body>
+</html>
